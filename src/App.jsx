@@ -1,15 +1,13 @@
-import React, { useState } from 'react';
-import { LiveSituation } from './components/dashboard/LiveSituation';
-import { ImpactAnalysis } from './components/dashboard/ImpactAnalysis';
-import { DecisionSupport } from './components/dashboard/DecisionSupport';
+import { useState } from 'react';
+import LiveSituation from './components/dashboard/LiveSituation.jsx';
+import ImpactAnalysis from './components/dashboard/ImpactAnalysis.jsx';
+import DecisionSupport from './components/dashboard/DecisionSupport.jsx';
 import { cn, formatDate } from './lib/utils';
-import { Activity, BarChart3, ShieldCheck, Menu, Bell } from 'lucide-react';
+import { Activity, BarChart3, ShieldCheck, Bell } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
-type Tab = 'live' | 'impact' | 'action';
-
 function App() {
-  const [activeTab, setActiveTab] = useState<Tab>('live');
+  const [activeTab, setActiveTab] = useState('live');
   const [currentTime] = useState(new Date());
 
   const tabs = [
@@ -47,7 +45,7 @@ function App() {
                 return (
                   <button
                     key={tab.id}
-                    onClick={() => setActiveTab(tab.id as Tab)}
+                    onClick={() => setActiveTab(tab.id)}
                     className={cn(
                       "flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200",
                       isActive 
@@ -87,7 +85,7 @@ function App() {
             return (
               <button
                 key={tab.id}
-                onClick={() => setActiveTab(tab.id as Tab)}
+                onClick={() => setActiveTab(tab.id)}
                 className={cn(
                   "flex flex-col items-center gap-1 p-2 rounded-lg text-xs font-medium transition-colors",
                   isActive ? "text-blue-600 bg-blue-50" : "text-slate-500"
@@ -102,20 +100,22 @@ function App() {
       </header>
 
       {/* Main Content Area */}
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <AnimatePresence mode="wait">
-          <motion.div
-            key={activeTab}
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -10 }}
-            transition={{ duration: 0.2 }}
-          >
-            {activeTab === 'live' && <LiveSituation />}
-            {activeTab === 'impact' && <ImpactAnalysis />}
-            {activeTab === 'action' && <DecisionSupport />}
-          </motion.div>
-        </AnimatePresence>
+      <main className="min-h-[calc(100vh-200px)] bg-gradient-to-br from-slate-50 via-blue-50 to-slate-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={activeTab}
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -10 }}
+              transition={{ duration: 0.2 }}
+            >
+              {activeTab === 'live' && <LiveSituation />}
+              {activeTab === 'impact' && <ImpactAnalysis />}
+              {activeTab === 'action' && <DecisionSupport />}
+            </motion.div>
+          </AnimatePresence>
+        </div>
       </main>
 
       {/* Footer Disclaimer */}

@@ -1,0 +1,286 @@
+{
+  "metadata": {
+    "processedDate": "2026-01-22T18:26:08.339Z",
+    "historicalYears": "1901-2015",
+    "analysisYear": 2015,
+    "dataSource": "India Meteorological Department",
+    "totalDistricts": 641,
+    "riskZonesIdentified": 8
+  },
+  "criticalZones": [
+    {
+      "id": 1,
+      "name": "Barpeta",
+      "state": "Assam",
+      "severity": 0.9,
+      "coordinates": [
+        26.32,
+        91
+      ],
+      "rainfall": 2500,
+      "anomaly": "Excess rain detected"
+    },
+    {
+      "id": 2,
+      "name": "Kaziranga",
+      "state": "Assam",
+      "severity": 0.85,
+      "coordinates": [
+        26.65,
+        93.35
+      ],
+      "rainfall": 2400,
+      "anomaly": "High water levels"
+    },
+    {
+      "id": 3,
+      "name": "Darbhanga",
+      "state": "Bihar",
+      "severity": 0.78,
+      "coordinates": [
+        26.15,
+        85.89
+      ],
+      "rainfall": 872.7,
+      "anomaly": "Rising trend"
+    }
+  ],
+  "riskAnalysis": [
+    {
+      "subdivision": "TAMIL NADU",
+      "year": 2015,
+      "actualRainfall": 1204.6,
+      "normalRainfall": 960.01,
+      "anomalyMM": 244.59,
+      "anomalyPercent": 25.48,
+      "severity": 0.8,
+      "riskLevel": "Critical",
+      "districtCount": 32
+    },
+    {
+      "subdivision": "LAKSHADWEEP",
+      "year": 2015,
+      "actualRainfall": 1642.9,
+      "normalRainfall": 1600,
+      "anomalyMM": 42.9,
+      "anomalyPercent": 2.68,
+      "severity": 0.5,
+      "riskLevel": "Moderate",
+      "districtCount": 1
+    },
+    {
+      "subdivision": "ARUNACHAL PRADESH",
+      "year": 2015,
+      "actualRainfall": 2767.5,
+      "normalRainfall": 2927.38,
+      "anomalyMM": -159.88,
+      "anomalyPercent": -5.46,
+      "severity": 0.2,
+      "riskLevel": "Low",
+      "districtCount": 16
+    },
+    {
+      "subdivision": "ORISSA",
+      "year": 2015,
+      "actualRainfall": 1210.1,
+      "normalRainfall": 1466.12,
+      "anomalyMM": -256.02,
+      "anomalyPercent": -17.46,
+      "severity": 0.2,
+      "riskLevel": "Low",
+      "districtCount": 30
+    },
+    {
+      "subdivision": "JHARKHAND",
+      "year": 2015,
+      "actualRainfall": 1081.8,
+      "normalRainfall": 1303.44,
+      "anomalyMM": -221.64,
+      "anomalyPercent": -17,
+      "severity": 0.2,
+      "riskLevel": "Low",
+      "districtCount": 24
+    },
+    {
+      "subdivision": "BIHAR",
+      "year": 2015,
+      "actualRainfall": 872.7,
+      "normalRainfall": 1200.56,
+      "anomalyMM": -327.86,
+      "anomalyPercent": -27.31,
+      "severity": 0.2,
+      "riskLevel": "Low",
+      "districtCount": 38
+    },
+    {
+      "subdivision": "PUNJAB",
+      "year": 2015,
+      "actualRainfall": 510.8,
+      "normalRainfall": 648.55,
+      "anomalyMM": -137.75,
+      "anomalyPercent": -21.24,
+      "severity": 0.2,
+      "riskLevel": "Low",
+      "districtCount": 20
+    },
+    {
+      "subdivision": "KERALA",
+      "year": 2015,
+      "actualRainfall": 2600.6,
+      "normalRainfall": 2937.39,
+      "anomalyMM": -336.79,
+      "anomalyPercent": -11.47,
+      "severity": 0.2,
+      "riskLevel": "Low",
+      "districtCount": 14
+    }
+  ],
+  "impactData": {
+    "infrastructure": [
+      {
+        "name": "Roads",
+        "loss": 530,
+        "unit": "km"
+      },
+      {
+        "name": "Bridges",
+        "loss": 12,
+        "unit": "units"
+      },
+      {
+        "name": "Power Grid",
+        "loss": 85,
+        "unit": "substations"
+      },
+      {
+        "name": "Telecom",
+        "loss": 120,
+        "unit": "towers"
+      }
+    ],
+    "sectorLoss": [
+      {
+        "name": "Agriculture",
+        "value": 65,
+        "color": "#eab308"
+      },
+      {
+        "name": "Aquaculture",
+        "value": 20,
+        "color": "#3b82f6"
+      },
+      {
+        "name": "Housing",
+        "value": 15,
+        "color": "#ef4444"
+      }
+    ],
+    "timeline": [
+      {
+        "day": "Day 1",
+        "impact": 20
+      },
+      {
+        "day": "Day 2",
+        "impact": 35
+      },
+      {
+        "day": "Day 3",
+        "impact": 55
+      },
+      {
+        "day": "Day 4",
+        "impact": 80
+      },
+      {
+        "day": "Day 5",
+        "impact": 75
+      },
+      {
+        "day": "Day 6",
+        "impact": 60
+      },
+      {
+        "day": "Day 7",
+        "impact": 58
+      }
+    ]
+  },
+  "yearlyTrend": [
+    {
+      "year": 2001,
+      "subdivisionsAnalyzed": 1,
+      "avgAnomaly": 1380.6
+    },
+    {
+      "year": 2002,
+      "subdivisionsAnalyzed": 1,
+      "avgAnomaly": 1033.5
+    },
+    {
+      "year": 2003,
+      "subdivisionsAnalyzed": 1,
+      "avgAnomaly": 1532.9
+    },
+    {
+      "year": 2004,
+      "subdivisionsAnalyzed": 1,
+      "avgAnomaly": 1553.2
+    },
+    {
+      "year": 2005,
+      "subdivisionsAnalyzed": 1,
+      "avgAnomaly": 1575.4
+    },
+    {
+      "year": 2006,
+      "subdivisionsAnalyzed": 1,
+      "avgAnomaly": 1598.6
+    },
+    {
+      "year": 2007,
+      "subdivisionsAnalyzed": 1,
+      "avgAnomaly": 2361.6
+    },
+    {
+      "year": 2008,
+      "subdivisionsAnalyzed": 1,
+      "avgAnomaly": 1726.8
+    },
+    {
+      "year": 2009,
+      "subdivisionsAnalyzed": 1,
+      "avgAnomaly": 1570.1
+    },
+    {
+      "year": 2010,
+      "subdivisionsAnalyzed": 1,
+      "avgAnomaly": 1725.2
+    },
+    {
+      "year": 2011,
+      "subdivisionsAnalyzed": 1,
+      "avgAnomaly": 1533.7
+    },
+    {
+      "year": 2012,
+      "subdivisionsAnalyzed": 1,
+      "avgAnomaly": 1405.5
+    },
+    {
+      "year": 2013,
+      "subdivisionsAnalyzed": 1,
+      "avgAnomaly": 1426.3
+    },
+    {
+      "year": 2014,
+      "subdivisionsAnalyzed": 1,
+      "avgAnomaly": 1395
+    },
+    {
+      "year": 2015,
+      "subdivisionsAnalyzed": 1,
+      "avgAnomaly": 1642.9
+    }
+  ]
+}
